@@ -1,5 +1,5 @@
 <?php
-include 'conn.php';
+require 'conn.php';
 
 // Récupération des filières
 $stmt = $pdo->query("SELECT id, nom FROM filieres");
