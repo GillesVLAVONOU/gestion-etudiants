@@ -9,7 +9,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 $id = $_GET['id'];
 
 // Suppression avec requête préparée
-$sql = "DELETE FROM etudiants WHERE id = :id";
+$sql = "DELETE FROM etudiants WHERE id_etu = :id";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 $stmt->execute();

@@ -12,7 +12,7 @@ if (empty($nom) || empty($prenom) || empty($filiere)) {
 }
 
 // Insertion dans la base de données avec requête préparée
-$sql = "INSERT INTO etudiants (nom, prenom, id_filiere) VALUES (:nom, :prenom, :filiere)";
+$sql = "INSERT INTO etudiants (nom_etu, prenom_etu, id_fil) VALUES (:nom, :prenom, :filiere)";
 $stmt = $pdo->prepare($sql);
 
 $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
