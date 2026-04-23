@@ -22,8 +22,9 @@ $etudiants = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <script src="assets/js/script.js"></script>
 </head>
 <body>
+    <h1 class="titre-principal">Gestion des Étudiants</h1>
     <div class="container-global">
-        <h1 class="titre-form">Ajouter un Étudiant</h1>
+        <h2 class="titre-form">Ajouter un Étudiant</h2>
         <form action="traitement.php" method="post" class="form-etudiant">
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" required><br><br>
