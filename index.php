@@ -27,9 +27,9 @@ $etudiants = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <h2 class="titre-form">Ajouter un Étudiant</h2>
         <form action="traitement.php" method="post" class="form-etudiant">
             <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required><br><br>
+            <input type="text" id="nom" name="nom" ><br><br>
             <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required><br><br>
+            <input type="text" id="prenom" name="prenom" ><br><br>
             <label for="filiere">Filière:</label>
             <select id="filiere" name="filiere" required>
                 <option value="">Sélectionnez une filière</option>

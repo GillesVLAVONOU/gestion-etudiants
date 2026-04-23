@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 message += 'Le prénom est requis. ';
             }
             if (!valid) {
-                e.preventDefault();
+                e.preventDefault();/* Empêche l'envoi du formulaire */
                 let errorDiv = document.querySelector('#error-message');
                 if (!errorDiv) {
                     errorDiv = document.createElement('div');
