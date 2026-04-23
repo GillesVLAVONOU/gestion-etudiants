@@ -11,6 +11,7 @@ $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Gestion Étudiants</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Ajouter un Étudiant</h1>
