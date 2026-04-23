@@ -114,6 +114,31 @@ tbody tr:last-child td {
     background-color: #c82333;
 }
 
+/* Bouton Annuler */
+.btn-annuler {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-annuler:hover {
+    background-color: #5a6268;
+}
+
+/* Message d'erreur */
+.erreur {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
 button:hover {
     background-color: #0056b3;
 }

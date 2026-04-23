@@ -28,3 +28,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Fonction de validation pour les formulaires
+function validerFormulaire() {
+    const nom = document.getElementById('nom');
+    const prenom = document.getElementById('prenom');
+    const filiere = document.getElementById('filiere');
+    
+    let valid = true;
+    let message = '';
+
+    if (!nom || nom.value.trim() === '') {
+        valid = false;
+        message += 'Le nom est requis. ';
+    }
+    if (!prenom || prenom.value.trim() === '') {
+        valid = false;
+        message += 'Le prénom est requis. ';
+    }
+    if (!filiere || filiere.value.trim() === '') {
+        valid = false;
+        message += 'La filière est requise. ';
+    }
+
+    if (!valid) {
+        alert(message);
+        return false;
+    }
+    return true;
+}
